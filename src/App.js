@@ -1,8 +1,16 @@
 
 import "./App.css";
+import BackgroundApp from "./components/backgroundApp/backgroundApp";
+import FormToAddData from "./pageElements/formToAddData";
 
 function App() {
-  return <h1 className="text-3xl text-red-900 font-bold underline"> Hello world! </h1>;
+  return (
+    <div className="flex justify-center p-4">
+      <BackgroundApp>
+        <FormToAddData />
+      </BackgroundApp>
+    </div>
+  )
 }
 
 export default App;
