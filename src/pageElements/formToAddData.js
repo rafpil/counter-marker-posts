@@ -14,7 +14,7 @@ const FormToAddData = () => {
       <InputForm
         id="road-name"
         laben="oznaczenie drogi"
-        placeholder="nazwa drogi"
+        placeholder="np. DK 16"
         refInput={refInputName}
       />
       <div className="flex flex-row justify-center gap-3">
