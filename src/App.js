@@ -4,6 +4,7 @@ import BackgroundApp from "./components/backgroundApp/backgroundApp";
 import FormToAddData from "./pageElements/formToAddData";
 import DataCard from "./pageElements/dataCard";
 import HelpIcon from "./components/help/helpIcon";
+import Copyright from "./components/copyright/copyright";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <HelpIcon />
         <FormToAddData />
         <DataCard />
+        <Copyright />
       </BackgroundApp>
     </div>
   )
