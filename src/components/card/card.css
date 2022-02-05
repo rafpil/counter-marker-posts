@@ -1,0 +1,35 @@
+.card-data {
+  @apply flex justify-center w-[33.333333%];
+}
+
+.card-body {
+  @apply block rounded-lg shadow shadow-app_blue-20 bg-white border-2 border-app_blue-10 
+  max-w-sm text-center w-full m-2;
+}
+
+.card-header {
+  @apply relative py-3 px-6 font-bold text-app_blue-10 border-b border-gray-400 flex justify-center items-center;
+}
+
+.card-header--main-text {
+  @apply pt-[4px] pb-[5px] truncate w-[12rem];
+}
+
+.card-header--sub-text {
+  @apply text-app_blue-10 font-medium mb-2;
+}
+
+.card-header--input {
+  @apply text-center py-[4px] border-b w-[12rem] border-app_blue-20 focus-visible:outline-none;
+}
+
+.card-box-icon {
+  @apply absolute flex right-[5px] cursor-pointer;
+}
+.card-icon {
+  @apply mx-1 hover:shadow-2xl hover:shadow-app_blue-20 hover:text-app_blue-20;
+}
+
+.card-icon--delete {
+  @apply hover:shadow-app_red-10 hover:text-app_red-10;
+}
