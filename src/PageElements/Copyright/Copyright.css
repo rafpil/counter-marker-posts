@@ -1,0 +1,7 @@
+.copyright {
+    @apply w-full tracking-wider  text-sm font-bold text-app_blue-10 flex pt-2 pl-1
+}
+
+.copyright-anchor {
+    @apply hover:text-app_blue-20
+}
