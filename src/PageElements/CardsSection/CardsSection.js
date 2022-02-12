@@ -4,6 +4,8 @@ import Card from "../../components/card/card";
 import NoDataInfo from "../../components/noDataInfo/noDataInfo";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
+import "./CardsSection.css";
+
 const CardsSection = () => {
   const dataCtx = useContext(DataContext);
 
