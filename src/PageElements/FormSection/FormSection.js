@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import InputForm from "../../components/inputForm/inputForm";
+import InputForm from "../../components/InputForm/InputForm";
 import Button from "../../components/Button/Button";
 import Counter from "../../components/counter/counter";
 import DataContext from "../../context/dataCtx";
