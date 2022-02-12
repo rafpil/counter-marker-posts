@@ -3,7 +3,6 @@ import React from "react";
 import "./Button.css";
 
 const Button = ({ click, disabled }) => {
-
   return (
     <button
       type="button"
@@ -11,7 +10,7 @@ const Button = ({ click, disabled }) => {
       className="button"
       onClick={click}
     >
-      Przelicz i dodaj  
+      Przelicz i dodaj
     </button>
   );
 };
