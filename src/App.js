@@ -1,8 +1,7 @@
-
 import "./App.css";
 import BackgroundApp from "./components/backgroundApp/backgroundApp";
-import FormToAddData from "./pageElements/formToAddData";
-import DataCard from "./pageElements/dataCard";
+import FormToAddData from "./PageElements/formToAddData";
+import CardsSection from "./PageElements/CardsSection/CardsSection";
 import HelpIcon from "./components/help/helpIcon";
 import Copyright from "./components/copyright/copyright";
 
@@ -12,11 +11,11 @@ function App() {
       <BackgroundApp>
         <HelpIcon />
         <FormToAddData />
-        <DataCard />
+        <CardsSection />
         <Copyright />
       </BackgroundApp>
     </div>
-  )
+  );
 }
 
 export default App;
