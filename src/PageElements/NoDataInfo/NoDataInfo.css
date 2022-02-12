@@ -1,0 +1,15 @@
+.no-data-info {
+    @apply bg-blue-100 rounded-lg py-5 px-6 mb-4 text-base text-app_blue-10 border-app_blue-10 border-[1px]
+}
+
+.no-data-info--header {
+    @apply text-2xl font-bold leading-tight mb-2 text-center
+}
+
+.no-data-info--hr {
+    @apply border-blue-600 opacity-30
+}
+
+.no-data-info--paragraf {
+    @apply mt-4 mb-0
+}
