@@ -6,6 +6,7 @@ module.exports = {
         app_blue: {
           10: "#142F56",
           20: "#062147",
+          30: "#142f56e1",
         },
         app_orange: {
           10: "#FBBE00",
