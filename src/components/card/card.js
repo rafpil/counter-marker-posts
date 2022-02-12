@@ -6,7 +6,7 @@ import DataContext from "../../context/dataCtx";
 
 import "./card.css";
 
-const Card = ({ item, alloweEdit = true }) => {
+const Card = ({ item, alloweEdit = true, order }) => {
   const [editInput, setEditInput] = useState(false);
   const [valueInput, setValueInput] = useState(item.name);
 
@@ -21,7 +21,7 @@ const Card = ({ item, alloweEdit = true }) => {
   };
 
   return (
-    <div className="card-data">
+    <div className="card-data w-[33.333333%]" style={{ order: order }}>
       <div className="card-body">
         <div className="card-header">
           {!editInput && (
@@ -54,7 +54,9 @@ const Card = ({ item, alloweEdit = true }) => {
               {!editInput && (
                 <RiDeleteBin5Fill
                   className="card-icon card-icon--delete"
-                  onClick={() => dataCtx.remove(item.id)}
+                  onClick={() => {
+                    dataCtx.remove(item.id);
+                  }}
                 />
               )}
             </div>
