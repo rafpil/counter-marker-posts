@@ -1,0 +1,9 @@
+.help-icon {
+  @apply w-full flex justify-end p-2;
+}
+
+.help-icon--info {
+    @apply rounded-full text-[2rem] bg-app_blue-10 text-white p-[.3rem] shadow-md 
+    hover:bg-app_blue-20 hover:shadow-lg
+    focus:bg-app_blue-20 focus:shadow-lg
+}
