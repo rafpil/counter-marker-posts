@@ -11,12 +11,17 @@ const CardsSection = () => {
 
   return (
     <>
-      <div className="flex flex-row justify-center py-4">
+      <div className="cards-section--empty-data">
         <div className="">{!dataCtx.data.length && <NoDataInfo />}</div>
       </div>
-      <div className="flex flex-row flex-wrap justify-center">
+      <div className="cards-section--cards-view">
         {dataCtx.data.length !== 0 && (
-          <Card key={`card-total`} item={dataCtx.total} alloweEdit={false} order={1} />
+          <Card
+            key={`card-total`}
+            item={dataCtx.total}
+            alloweEdit={false}
+            order={1}
+          />
         )}
         <TransitionGroup component={null}>
           {dataCtx.data.length !== 0 &&
@@ -26,7 +31,11 @@ const CardsSection = () => {
                 timeout={300}
                 classNames="card-animation"
               >
-                <Card key={`card-${item.id}`} item={item}  order={item.position}/>
+                <Card
+                  key={`card-${item.id}`}
+                  item={item}
+                  order={item.position}
+                />
               </CSSTransition>
             ))}
         </TransitionGroup>

@@ -1,3 +1,11 @@
+.cards-section--empty-data {
+  @apply flex flex-row justify-center py-4
+}
+
+.cards-section--cards-view {
+  @apply flex flex-row flex-wrap justify-center
+}
+
 .card-animation-enter {
   opacity: 0;
   width: 0;
