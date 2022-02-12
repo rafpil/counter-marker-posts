@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import DataContext from "../../context/dataCtx";
 import Card from "../../components/card/card";
-import NoDataInfo from "../../components/noDataInfo/noDataInfo";
+import NoDataInfo from "../NoDataInfo/NoDataInfo";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import "./CardsSection.css";
