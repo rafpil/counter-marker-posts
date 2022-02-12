@@ -1,7 +1,17 @@
 import React from "react";
 
-const InputForm = ({ id, laben, placeholder, refInput }) => {
-
+const InputForm = ({
+  id,
+  laben,
+  placeholder,
+  refInput,
+  inputBlurHandler,
+  inputIsValid,
+  valueInput,
+  touched,
+  inputChangeHandler,
+}) => {
+ 
   return (
     <div className="flex justify-center">
       <div className="mb-3 xl:w-96 flex justify-center flex-col items-center">
@@ -13,7 +23,7 @@ const InputForm = ({ id, laben, placeholder, refInput }) => {
         </label>
         <input
           type="text"
-          className="
+          className={`
     form-control
     block
     w-full
@@ -30,10 +40,13 @@ const InputForm = ({ id, laben, placeholder, refInput }) => {
     ease-in-out
     m-0
     focus:text-gray-700 focus:bg-white focus:border-[#142F56] focus:shadow focus:shadow-[#142F56] focus:outline-none
-  "
+  ${!inputIsValid && touched ? "border-[#E94720]" : ""}`}
           id={id}
           placeholder={placeholder}
           ref={refInput}
+          value={valueInput}
+          onBlur={inputBlurHandler}
+          onChange={(event) => inputChangeHandler(event)}
         />
       </div>
     </div>
