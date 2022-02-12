@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import InputForm from "../../components/inputForm/inputForm";
-import Button from "../../components/button/button";
+import Button from "../../components/Button/Button";
 import Counter from "../../components/counter/counter";
 import DataContext from "../../context/dataCtx";
 import {
