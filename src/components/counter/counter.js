@@ -1,4 +1,4 @@
-const Counter = (nameInput, startInput, finishInput) => {
+const Counter = (nameInput, position, startInput, finishInput) => {
 
   let km = new Array(10).fill(0, 0, 10);
   let he = new Array(10).fill(0, 0, 10);
@@ -16,7 +16,7 @@ const Counter = (nameInput, startInput, finishInput) => {
     start = (start * 10 + 0.1 * 10) / 10;
   } while (start.toFixed(1) !== (finish + 0.1).toFixed(1));
 
-  return {id: id, name: nameInput, km: km, he: he, start: startInput, finish: finishInput};
+  return {id: id, position: position, name: nameInput, km: km, he: he, start: startInput, finish: finishInput};
 };
 
 export default Counter;
