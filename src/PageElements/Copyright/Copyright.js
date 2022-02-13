@@ -5,7 +5,7 @@ import "./Copyright.css";
 const Copyright = () => {
   return (
     <div className="copyright">
-      <div className="sm:mr-auto  whitespace-nowrap">
+      <div className="sm:mr-auto whitespace-nowrap">
         [&nbsp;Designed & Built by&nbsp;
         <a
           href="https://github.com/rafpil"

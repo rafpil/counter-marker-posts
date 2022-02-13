@@ -6,7 +6,9 @@ import "./HelpIcon.css";
 const HelpIcon = () => {
   return (
     <div className="help-icon">
-      <FaInfo className="help-icon--info" />
+      <abbr title="Instrukcja obsługi"> 
+        <FaInfo className="help-icon--info" />
+      </abbr>
     </div>
   );
 };

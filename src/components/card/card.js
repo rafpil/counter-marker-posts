@@ -21,11 +21,16 @@ const Card = ({ item, alloweEdit = true, order }) => {
   };
 
   return (
-    <div className="card-data w-full sm:w-[50%] lg:w-[33.333333%] xl:w-1/4 2xl:w-1/5" style={{ order: order }}>
+    <div
+      className="card-data w-full sm:w-[50%] lg:w-[33.333333%] xl:w-1/4 2xl:w-1/5"
+      style={{ order: order }}
+    >
       <div className="card-body">
         <div className="card-header">
           {!editInput && (
-            <div className="card-header--main-text"> {valueInput} </div>
+            <div className="card-header--main-text">
+              <abbr title={valueInput}> {valueInput} </abbr>{" "}
+            </div>
           )}
           {editInput && (
             <input
@@ -36,29 +41,35 @@ const Card = ({ item, alloweEdit = true, order }) => {
           )}
           {alloweEdit && (
             <div className="card-box-icon">
-              {!editInput && (
-                <FaEdit
-                  className="card-icon"
-                  onClick={() => setEditInput(!editInput)}
-                />
-              )}
-              {editInput && (
-                <FaSave
-                  className="card-icon"
-                  onClick={() => {
-                    setEditInput(!editInput);
-                    dataCtx.edit(item.id, valueInput);
-                  }}
-                />
-              )}
-              {!editInput && (
-                <RiDeleteBin5Fill
-                  className="card-icon card-icon--delete"
-                  onClick={() => {
-                    dataCtx.remove(item.id);
-                  }}
-                />
-              )}
+              <abbr title="Edycja nazwy">
+                {!editInput && (
+                  <FaEdit
+                    className="card-icon"
+                    onClick={() => setEditInput(!editInput)}
+                  />
+                )}
+              </abbr>
+              <abbr title="Zapisz">
+                {editInput && (
+                  <FaSave
+                    className="card-icon"
+                    onClick={() => {
+                      setEditInput(!editInput);
+                      dataCtx.edit(item.id, valueInput);
+                    }}
+                  />
+                )}
+              </abbr>
+              <abbr title="Usuń">
+                {!editInput && (
+                  <RiDeleteBin5Fill
+                    className="card-icon card-icon--delete"
+                    onClick={() => {
+                      dataCtx.remove(item.id);
+                    }}
+                  />
+                )}
+              </abbr>
             </div>
           )}
         </div>
