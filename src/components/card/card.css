@@ -4,7 +4,7 @@
 
 .card-body {
   @apply block rounded-lg shadow shadow-app_blue-20 bg-white border-2 border-app_blue-10 
-  max-w-sm text-center w-full m-2;
+  max-w-sm text-center w-full xl:m-2 m-1;
 }
 
 .card-header {

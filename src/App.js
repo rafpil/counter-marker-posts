@@ -7,7 +7,7 @@ import Copyright from "./PageElements/Copyright/Copyright";
 
 function App() {
   return (
-    <div className="flex justify-center p-4">
+    <div className="flex justify-center py-4">
       <BackgroundApp>
         <HelpIcon />
         <FormSection />

@@ -21,7 +21,7 @@ const Card = ({ item, alloweEdit = true, order }) => {
   };
 
   return (
-    <div className="card-data w-[33.333333%]" style={{ order: order }}>
+    <div className="card-data w-full sm:w-[50%] lg:w-[33.333333%] xl:w-1/4 2xl:w-1/5" style={{ order: order }}>
       <div className="card-body">
         <div className="card-header">
           {!editInput && (

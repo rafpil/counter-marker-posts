@@ -5,7 +5,7 @@ import "./Copyright.css";
 const Copyright = () => {
   return (
     <div className="copyright">
-      <span className="mr-auto">
+      <div className="sm:mr-auto  whitespace-nowrap">
         [&nbsp;Designed & Built by&nbsp;
         <a
           href="https://github.com/rafpil"
@@ -16,8 +16,8 @@ const Copyright = () => {
           Rafał Pilśniak
         </a>
         &nbsp;]
-      </span>
-      <span className="ml-auto">[&nbsp;Copyright &copy; 2022&nbsp;]</span>
+      </div>
+      <div className="sm:ml-auto whitespace-nowrap">[&nbsp;Copyright &copy; 2022&nbsp;]</div>
     </div>
   );
 };

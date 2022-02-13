@@ -1,5 +1,5 @@
 .cards-section--empty-data {
-  @apply flex flex-row justify-center py-4
+  @apply flex flex-row justify-center py-4 w-full px-1 sm:px-0
 }
 
 .cards-section--cards-view {

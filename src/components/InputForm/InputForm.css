@@ -1,5 +1,5 @@
 .input-form--container {
-    @apply flex justify-center
+    @apply flex justify-center max-w-[18rem]
 }
 
 .input-form--row {

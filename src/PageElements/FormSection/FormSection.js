@@ -79,8 +79,9 @@ const FormToAddData = () => {
   };
 
   return (
-    <>
-      <InputForm
+    <div className="flex flex-col items-center justify-center" >
+      <div className="p-1 flex justify-center">
+        <InputForm
         id="road-name"
         laben="oznaczenie drogi"
         placeholder="np. DK 16"
@@ -90,8 +91,9 @@ const FormToAddData = () => {
         inputBlurHandler={() => isInputBlur(setNameInputTouched)}
         inputChangeHandler={nameInputChangeHandler}
       />
-      <div className="flex flex-row justify-center gap-3">
-        <div className="basis-1/4">
+      </div>
+      <div className="flex flex-col p-1 sm:flex-row md:w-[43rem] justify-center xl:gap-3">
+        <div className="w-full sm:w-2/4 sm:px-1 flex justify-center">
           <InputForm
             id="road-start"
             laben="początek"
@@ -103,7 +105,7 @@ const FormToAddData = () => {
             inputChangeHandler={startInputChangeHandler}
           />
         </div>
-        <div className="basis-1/4">
+        <div className="w-full sm:w-2/4 sm:px-1 flex justify-center">
           <InputForm
             id="road-finish"
             laben="koniec"
@@ -117,7 +119,7 @@ const FormToAddData = () => {
         </div>
       </div>
       <div className="flex flex-row justify-center gap-3">
-        <div className="basis-1/4">
+        <div className="w-full flex justify-center max-w-[18rem]">
           <Button
             disabled={formValid}
             click={() => {
@@ -128,7 +130,7 @@ const FormToAddData = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

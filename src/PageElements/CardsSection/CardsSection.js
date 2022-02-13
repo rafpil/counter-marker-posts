@@ -12,7 +12,7 @@ const CardsSection = () => {
   return (
     <>
       <div className="cards-section--empty-data">
-        <div className="">{!dataCtx.data.length && <NoDataInfo />}</div>
+        <div className="max-w-[18rem] sm:max-w-full sm:px-2">{!dataCtx.data.length && <NoDataInfo />}</div>
       </div>
       <div className="cards-section--cards-view">
         {dataCtx.data.length !== 0 && (
