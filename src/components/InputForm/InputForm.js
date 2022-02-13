@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./InputForm.css";
+
 const InputForm = ({
   id,
   laben,
@@ -11,36 +13,17 @@ const InputForm = ({
   touched,
   inputChangeHandler,
 }) => {
- 
   return (
-    <div className="flex justify-center">
-      <div className="mb-3 xl:w-96 flex justify-center flex-col items-center">
-        <label
-          htmlFor={id}
-          className="form-label inline-block mb-2 mt-5 tracking-widest text-[#142F56] font-bold text-xl"
-        >
+    <div className="input-form--container">
+      <div className="input-form--row">
+        <label htmlFor={id} className="input-form--label">
           {laben.toUpperCase()}
         </label>
         <input
           type="text"
-          className={`
-    form-control
-    block
-    w-full
-    px-4
-    py-2
-    text-xl
-    font-normal
-    text-[#142F56]
-    text-center
-    bg-white bg-clip-padding
-    border border-solid border-gray-300
-    rounded
-    transition
-    ease-in-out
-    m-0
-    focus:text-gray-700 focus:bg-white focus:border-[#142F56] focus:shadow focus:shadow-[#142F56] focus:outline-none
-  ${!inputIsValid && touched ? "border-[#E94720]" : ""}`}
+          className={`input-form--input-text ${
+            !inputIsValid && touched ? "inValidInput" : ""
+          }`}
           id={id}
           placeholder={placeholder}
           ref={refInput}

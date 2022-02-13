@@ -1,0 +1,23 @@
+.input-form--container {
+    @apply flex justify-center
+}
+
+.input-form--row {
+    @apply mb-3 xl:w-96 flex justify-center flex-col items-center
+}
+
+.input-form--label {
+    @apply inline-block mb-2 mt-5 tracking-widest text-app_blue-10 font-bold text-xl
+}
+
+.input-form--input-text {
+    @apply block w-full px-4 py-2 text-xl font-normal text-app_blue-10 text-center bg-white
+    bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
+    focus:text-gray-700 focus:bg-white focus:border-app_blue-10 focus:shadow focus:shadow-app_blue-10
+    focus:outline-none
+}
+
+.inValidInput {
+    @apply !border-app_red-10 focus:shadow focus:shadow-app_red-10
+    focus:outline-none
+}
