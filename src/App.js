@@ -1,5 +1,5 @@
 import "./App.css";
-import BackgroundApp from "./components/BackgroundApp/BackgroundApp";
+import BackgroundApp from "./Components/BackgroundApp/BackgroundApp";
 import FormSection from "./PageElements/FormSection/FormSection";
 import CardsSection from "./PageElements/CardsSection/CardsSection";
 import HelpIcon from "./PageElements/HelpSection/HelpIcon";
