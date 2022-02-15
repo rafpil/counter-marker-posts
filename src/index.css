@@ -2,12 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/Cabin/static/Cabin/Cabin-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cabin";
+  font-style: medium;
+  font-weight: 500;
+  src: url("./Fonts/Cabin/static/Cabin/Cabin-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Cabin";
+  font-style: sami-bold;
+  font-weight: 600;
+  src: url("./Fonts/Cabin/static/Cabin/Cabin-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Cabin";
+  font-style: bold;
+  font-weight: 700;
+  src: url("./Fonts/Cabin/static/Cabin/Cabin-Bold.ttf");
+}
+
 body {
-    background-attachment: fixed;
-    background-image: url("./images/background.jpg");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: center;
-    background-size: cover;
-    font-family: 'Cabin', sans-serif;
+  background-attachment: fixed;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  font-family: "Cabin", sans-serif;
 }
