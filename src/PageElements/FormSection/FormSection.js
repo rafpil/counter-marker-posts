@@ -1,12 +1,12 @@
 import React, { useState, useContext, useEffect } from "react";
 import InputForm from "../../Components/InputForm/InputForm";
 import Button from "../../Components/Button/Button";
-import Counter from "../../Components/counter/counter";
-import DataContext from "../../Context/dataCtx";
+import Counter from "../../Components/Counter/Counter";
+import DataContext from "../../Context/DataCtx";
 import {
   isInputBlur,
   isCorrectFormatInputLength,
-} from "../../Components/formValidator/formValidator";
+} from "../../Components/FormValidator/FormValidator";
 
 const FormToAddData = () => {
   const dataCtx = useContext(DataContext);

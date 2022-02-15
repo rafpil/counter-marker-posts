@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AddToTotal, RemoveFromTotal } from "../components/counter/counter";
+import { AddToTotal, RemoveFromTotal } from "../Components/Counter/Counter";
 
 const DataContext = React.createContext({
   data: [],

@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import Table from "../table/table";
+import Table from "../Table/Table";
 import { FaEdit, FaSave } from "react-icons/fa";
 import { RiDeleteBin5Fill } from "react-icons/ri";
-import DataContext from "../../Context/dataCtx";
+import DataContext from "../../Context/DataCtx";
 
-import "./card.css";
+import "./Card.css";
 
 const Card = ({ item, alloweEdit = true, order }) => {
   const [editInput, setEditInput] = useState(false);
