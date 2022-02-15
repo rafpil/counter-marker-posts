@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Table from "../table/table";
 import { FaEdit, FaSave } from "react-icons/fa";
 import { RiDeleteBin5Fill } from "react-icons/ri";
-import DataContext from "../../context/dataCtx";
+import DataContext from "../../Context/dataCtx";
 
 import "./card.css";
 

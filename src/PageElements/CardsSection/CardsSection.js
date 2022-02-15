@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import DataContext from "../../context/dataCtx";
-import Card from "../../components/card/card";
+import DataContext from "../../Context/dataCtx";
+import Card from "../../Components/card/card";
 import NoDataInfo from "../NoDataInfo/NoDataInfo";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
