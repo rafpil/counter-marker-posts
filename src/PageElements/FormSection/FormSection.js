@@ -8,6 +8,7 @@ import {
   isInputBlur,
   isCorrectFormatInputLength,
 } from "../../Components/FormValidator/FormValidator";
+import isStartInputValSmalerThanFinishInputVal from "../../Components/FormValidator/isStartInputValSmallerThanFinishInputVal";
 
 const FormToAddData = () => {
   const dataCtx = useContext(DataContext);
@@ -45,12 +46,16 @@ const FormToAddData = () => {
   }, [nameInput]);
 
   useEffect(() => {
-    if (startInput.trim() !== "" && isCorrectFormatInputLength(startInput)) {
+    if (
+      startInput.trim() !== "" &&
+      isCorrectFormatInputLength(startInput) &&
+      isStartInputValSmalerThanFinishInputVal(startInput, finishInput)
+    ) {
       setStartInputValid(true);
     } else {
       setStartInputValid(false);
     }
-  }, [startInput]);
+  }, [startInput, finishInput]);
 
   useEffect(() => {
     if (finishInput.trim() !== "" && isCorrectFormatInputLength(finishInput)) {
