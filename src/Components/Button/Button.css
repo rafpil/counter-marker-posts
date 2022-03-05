@@ -1,5 +1,5 @@
 .button {
-  @apply inline-block px-7 py-3 bg-app_blue-10 text-white font-bold text-sm leading-snug uppercase rounded shadow-md hover:bg-app_blue-20 hover:shadow-lg 
+  @apply inline-block px-5 py-3 bg-app_blue-10 text-white font-bold text-sm leading-snug uppercase rounded shadow-md hover:bg-app_blue-20 hover:shadow-lg 
   focus:bg-app_blue-20 focus:shadow-lg focus:outline-none focus:ring-0 
   active:bg-app_blue-20 active:shadow-lg transition duration-150 ease-in-out w-full 
   disabled:bg-app_blue-30 disabled:cursor-not-allowed;
