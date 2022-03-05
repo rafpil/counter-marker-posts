@@ -3,6 +3,7 @@ import InputForm from "../../Components/InputForm/InputForm";
 import Button from "../../Components/Button/Button";
 import Counter from "../../Components/Counter/Counter";
 import DataContext from "../../Context/DataCtx";
+import GenerateAndOpenPdf from "../../Components/PdfCreator/GenerateAndOpenPdf";
 import {
   isInputBlur,
   isCorrectFormatInputLength,
@@ -66,7 +67,7 @@ const FormToAddData = () => {
       setFormValid(false);
     }
   }, [formValid, nameInputValid, startInputValid, finishInputValid]);
-  
+
   const [position, setPosition] = useState(0);
 
   const clearForm = () => {
@@ -79,18 +80,18 @@ const FormToAddData = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center" >
+    <div className="flex flex-col items-center justify-center">
       <div className="p-1 flex justify-center">
         <InputForm
-        id="road-name"
-        laben="oznaczenie drogi"
-        placeholder="np. DK 16"
-        touched={nameInputTouched}
-        inputIsValid={nameInputValid}
-        valueInput={nameInput}
-        inputBlurHandler={() => isInputBlur(setNameInputTouched)}
-        inputChangeHandler={nameInputChangeHandler}
-      />
+          id="road-name"
+          laben="oznaczenie drogi"
+          placeholder="np. DK 16"
+          touched={nameInputTouched}
+          inputIsValid={nameInputValid}
+          valueInput={nameInput}
+          inputBlurHandler={() => isInputBlur(setNameInputTouched)}
+          inputChangeHandler={nameInputChangeHandler}
+        />
       </div>
       <div className="flex flex-col p-1 sm:flex-row md:w-[43rem] justify-center xl:gap-3">
         <div className="w-full sm:w-2/4 sm:px-1 flex justify-center">
@@ -118,16 +119,28 @@ const FormToAddData = () => {
           />
         </div>
       </div>
-      <div className="flex flex-row justify-center gap-3">
-        <div className="w-full flex justify-center max-w-[18rem]">
+      <div className="flex flex-col sm:flex-row justify-center w-[18rem] sm:w-full md:w-[43rem]">
+        <div className="w-full py-3 sm:ml-[25%] sm:w-2/4 flex justify-center max-w-[18rem] sm:p-3">
           <Button
             disabled={formValid}
             click={() => {
               setPosition(position - 1);
-              dataCtx.add(Counter(nameInput, position, startInput, finishInput));
+              dataCtx.add(
+                Counter(nameInput, position, startInput, finishInput)
+              );
               clearForm();
             }}
-          />
+          >
+            Przelicz i dodaj
+          </Button>
+        </div>
+        <div className="w-full py-3 sm:w-1/4 flex justify-center sm:max-w-[11rem] sm:p-3">
+          <Button
+            disabled={dataCtx.data.length}
+            click={() => GenerateAndOpenPdf(dataCtx)}
+          >
+            Export do PDF
+          </Button>
         </div>
       </div>
     </div>
