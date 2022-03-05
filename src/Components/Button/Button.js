@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Button.css";
 
-const Button = ({ click, disabled }) => {
+const Button = ({ click, disabled, children }) => {
   return (
     <button
       type="button"
@@ -10,7 +10,7 @@ const Button = ({ click, disabled }) => {
       className="button"
       onClick={click}
     >
-      Przelicz i dodaj
+      {children}
     </button>
   );
 };
