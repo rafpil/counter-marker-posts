@@ -7,6 +7,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("./Fonts/Cabin/static/Cabin/Cabin-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
   font-style: medium;
   font-weight: 500;
   src: url("./Fonts/Cabin/static/Cabin/Cabin-Medium.ttf");
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
   font-style: sami-bold;
   font-weight: 600;
   src: url("./Fonts/Cabin/static/Cabin/Cabin-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
   font-style: bold;
   font-weight: 700;
   src: url("./Fonts/Cabin/static/Cabin/Cabin-Bold.ttf");
+  font-display: swap;
 }
 
 body {
